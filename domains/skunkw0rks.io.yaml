@@ -1,0 +1,68 @@
+---
+? ''
+: ttl: 1800
+  type: MX
+  value:
+    priority: 10
+    value: inbound-smtp.us-east-1.amazonaws.com
+7hc2v2l646t7jeugmb5vntf5b26ztn3k._domainkey.mail:
+  ttl: 1800
+  type: CNAME
+  value: 7hc2v2l646t7jeugmb5vntf5b26ztn3k.dkim.amazonses.com.
+159.208.202.14.in-addr.arpa:
+  ttl: 300
+  type: PTR
+  value: mail.skunkw0rks.io.
+_amazonses:
+  ttl: 1800
+  type: TXT
+  value: BDHeGxbCe3VfakaZz2LOgnD5Sg+NNLnysN/W2gsnaPs=
+_amazonses.mail:
+  ttl: 1800
+  type: TXT
+  value: PWHoqEcS8X6JW0iA4BHvEayia2SN0m3HvokOhr+yo+4=
+ajrowbnasqagl6ztg6l24lil2dgxndsj._domainkey.mail:
+  ttl: 1800
+  type: CNAME
+  value: ajrowbnasqagl6ztg6l24lil2dgxndsj.dkim.amazonses.com.
+blog:
+  ttl: 300
+  type: TXT
+  value: keybase-site-verification=m22FgTj4E0DrlDcy82is4KfHHT6j0DzQrdFIV3OPBZA
+cdn:
+  ttl: 300
+  type: CNAME
+  value: d2qwjr2ogzak4i.cloudfront.net.
+docker.db:
+  ttl: 300
+  type: CNAME
+  value: docker-mysql-cluster.cluster-cnbizuj67lfa.us-east-1.rds.amazonaws.com.
+ext:
+  ttl: 300
+  type: CNAME
+  value: 6f3a06f72192.sn.mynetname.net.
+k4oloabpnxvxsy6nbhrgshaujvbbeoue._domainkey.mail:
+  ttl: 1800
+  type: CNAME
+  value: k4oloabpnxvxsy6nbhrgshaujvbbeoue.dkim.amazonses.com.
+mail:
+- ttl: 1800
+  type: MX
+  value:
+    priority: 10
+    value: inbound-smtp.us-east-1.amazonaws.com
+- ttl: 300
+  type: TXT
+  value: PWHoqEcS8X6JW0iA4BHvEayia2SN0m3HvokOhr+yo+4=
+nas:
+  ttl: 300
+  type: A
+  value: 10.1.3.115
+net-mgmt.int:
+  ttl: 300
+  type: A
+  value: 10.1.3.105
+oob:
+  ttl: 300
+  type: A
+  value: 203.59.255.84
