@@ -1,0 +1,25 @@
+---
+? ''
+: - ttl: 300
+    type: MX
+    values:
+    - exchange: aspmx.l.google.com.
+      preference: 1
+    - exchange: alt1.aspmx.l.google.com.
+      preference: 5
+    - exchange: alt2.aspmx.l.google.com.
+      preference: 5
+    - exchange: alt3.aspmx.l.google.com.
+      preference: 10
+    - exchange: alt4.aspmx.l.google.com.
+      preference: 10
+  - type: TXT
+    value: google-site-verification=U1cvOL-PEdPtfjHu9ijl-jqqmQOrzWi1W--GGxXURk8
+google._domainkey:
+  ttl: 300
+  type: TXT
+  value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCKiqd2ODxedrvYxx9m+pHUiGibvmL523DrdPRaXmRLb1es52Jt7NHVupbS0M57WegAUI66pgVtxFF49vHNqJ3y8/1+NZHyEDtoHdfRfEdOumDXq60t3eEzDvTVapPOAPM501m9Waw8yWIhLROmYQyAmpV2nHrMHXQEFSMpCFDLjQIDAQAB
+olr6mqrcg5bj:
+  ttl: 300
+  type: CNAME
+  value: gv-62i6krxbeiguyg.dv.googlehosted.com.

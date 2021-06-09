@@ -1,0 +1,61 @@
+---
+? ''
+: - type: MX
+    values:
+    - exchange: aspmx.l.google.com.
+      preference: 1
+    - exchange: alt1.aspmx.l.google.com.
+      preference: 5
+    - exchange: alt2.aspmx.l.google.com.
+      preference: 5
+    - exchange: aspmx2.googlemail.com.
+      preference: 10
+    - exchange: aspmx3.googlemail.com.
+      preference: 10
+  - ttl: 300
+    type: TXT
+    value: google-site-verification=paI3ZxBkMgfLYLpgsd9UZ32ttjBDat8T1u8qiq22Agg
+api:
+  ttl: 300
+  type: CNAME
+  value: hp6mxwik59.execute-api.ap-southeast-2.amazonaws.com.
+code:
+  ttl: 86400
+  type: A
+  value: 115.70.36.137
+dropbox:
+  ttl: 86700
+  type: A
+  value: 115.70.36.137
+dvd:
+  ttl: 86400
+  type: A
+  value: 115.70.36.137
+edms:
+  ttl: 300
+  type: A
+  value: 115.70.36.137
+google._domainkey:
+  ttl: 300
+  type: TXT
+  value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSygHDLYXF0Yr7k0nWW8giEZz5KRdeQOKPuU6s+HePbZqktefC2PvJ485WhVBOjkYD/2bvKAt2BotKVT0pSkKqYs2/DWPC8DWqQKq2VWoJ+EAIyhmYWrT1QAxZf+gYzG/gX5iLEPyLTEswdJvIezOmeMV6uBy3naScks3ni9vZ3QIDAQAB
+hit:
+  ttl: 86700
+  type: A
+  value: 115.70.36.137
+home:
+  ttl: 300
+  type: NS
+  values:
+  - ns-1067.awsdns-05.org.
+  - ns-1772.awsdns-29.co.uk.
+  - ns-504.awsdns-63.com.
+  - ns-756.awsdns-30.net.
+nas:
+  ttl: 300
+  type: A
+  value: 115.70.36.137
+plantcam:
+  ttl: 300
+  type: A
+  value: 115.70.36.137

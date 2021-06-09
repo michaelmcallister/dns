@@ -1,68 +1,35 @@
 ---
 ? ''
-: ttl: 1800
-  type: MX
-  value:
-    priority: 10
-    value: inbound-smtp.us-east-1.amazonaws.com
-7hc2v2l646t7jeugmb5vntf5b26ztn3k._domainkey.mail:
-  ttl: 1800
-  type: CNAME
-  value: 7hc2v2l646t7jeugmb5vntf5b26ztn3k.dkim.amazonses.com.
-159.208.202.14.in-addr.arpa:
-  ttl: 300
-  type: PTR
-  value: mail.skunkw0rks.io.
-_amazonses:
-  ttl: 1800
-  type: TXT
-  value: BDHeGxbCe3VfakaZz2LOgnD5Sg+NNLnysN/W2gsnaPs=
-_amazonses.mail:
-  ttl: 1800
-  type: TXT
-  value: PWHoqEcS8X6JW0iA4BHvEayia2SN0m3HvokOhr+yo+4=
-ajrowbnasqagl6ztg6l24lil2dgxndsj._domainkey.mail:
-  ttl: 1800
-  type: CNAME
-  value: ajrowbnasqagl6ztg6l24lil2dgxndsj.dkim.amazonses.com.
+: - ttl: 86400
+    type: A
+    value: 115.70.36.137
+  - ttl: 300
+    type: MX
+    values:
+    - exchange: aspmx.l.google.com.
+      preference: 1
+    - exchange: alt1.aspmx.l.google.com.
+      preference: 5
+    - exchange: alt2.aspmx.l.google.com.
+      preference: 5
+    - exchange: aspmx2.googlemail.com.
+      preference: 10
+    - exchange: aspmx3.googlemail.com.
+      preference: 10
+  - type: TXT
+    value: google-site-verification=nRbQoaxLD5A4-m-MIpmm8wKoVVb17D9LVsEebwMn05Y
 blog:
-  ttl: 300
-  type: TXT
-  value: keybase-site-verification=m22FgTj4E0DrlDcy82is4KfHHT6j0DzQrdFIV3OPBZA
-cdn:
-  ttl: 300
-  type: CNAME
-  value: d2qwjr2ogzak4i.cloudfront.net.
-docker.db:
-  ttl: 300
-  type: CNAME
-  value: docker-mysql-cluster.cluster-cnbizuj67lfa.us-east-1.rds.amazonaws.com.
-ext:
-  ttl: 300
-  type: CNAME
-  value: 6f3a06f72192.sn.mynetname.net.
-k4oloabpnxvxsy6nbhrgshaujvbbeoue._domainkey.mail:
-  ttl: 1800
-  type: CNAME
-  value: k4oloabpnxvxsy6nbhrgshaujvbbeoue.dkim.amazonses.com.
-mail:
-- ttl: 1800
-  type: MX
-  value:
-    priority: 10
-    value: inbound-smtp.us-east-1.amazonaws.com
+- ttl: 86400
+  type: A
+  value: 115.70.36.137
 - ttl: 300
   type: TXT
-  value: PWHoqEcS8X6JW0iA4BHvEayia2SN0m3HvokOhr+yo+4=
-nas:
+  value: keybase-site-verification=m22FgTj4E0DrlDcy82is4KfHHT6j0DzQrdFIV3OPBZA
+google._domainkey:
   ttl: 300
+  type: TXT
+  value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCl+eO0iypQotQ0GH4TF4Gj0x1uWWY3TiYp6cnNffF6kHPJE3AUWH58I4y9P7pXlTyryj2/Mb708Tlf+2mSCaZfAzCifSG9WoSj2XiGul3UeoEu9aZR0NSeUseRKOSCivqOCaR4UV4FWsEnMiZVJ0KrYhiLkvG0j+x5lcyYvXecLQIDAQAB
+resume:
+  ttl: 86400
   type: A
-  value: 10.1.3.115
-net-mgmt.int:
-  ttl: 300
-  type: A
-  value: 10.1.3.105
-oob:
-  ttl: 300
-  type: A
-  value: 203.59.255.84
+  value: 115.70.36.137
