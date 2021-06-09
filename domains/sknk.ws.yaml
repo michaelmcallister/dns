@@ -23,10 +23,6 @@ code:
   ttl: 86400
   type: A
   value: 115.70.36.137
-dropbox:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
 dvd:
   ttl: 86400
   type: A
