@@ -1,0 +1,25 @@
+name: octodns-sync
+
+on:
+  # Deploy config whenever DNS changes are pushed to main.
+  push:
+    branches:
+      - main
+    paths:
+      - '*.yaml'
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+jobs:
+  publish:
+    name: Publish DNS config from main
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Publish
+        uses: solvaholic/octodns-sync@main
+        with:
+          config_path: config.yaml
+          doit: '--doit'
