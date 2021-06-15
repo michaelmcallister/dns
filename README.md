@@ -1,3 +1,5 @@
+[![octodns-sync](https://github.com/michaelmcallister/dns/actions/workflows/release.yml/badge.svg)](https://github.com/michaelmcallister/dns/actions/workflows/release.yml)
+
 ## Synopsis
 
 Domain configuration files to be used in conjunction with OctoDNS.
