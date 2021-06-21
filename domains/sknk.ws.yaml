@@ -55,3 +55,7 @@ plantcam:
   ttl: 86700
   type: A
   value: 115.70.36.137
+tele:
+  ttl: 86700
+  type: A
+  value: 115.70.36.137
