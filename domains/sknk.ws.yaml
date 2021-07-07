@@ -15,6 +15,9 @@
   - ttl: 300
     type: TXT
     value: google-site-verification=paI3ZxBkMgfLYLpgsd9UZ32ttjBDat8T1u8qiq22Agg
+'*.tele':
+    type: CNAME
+    value: tele.sknk.ws. 
 api:
   ttl: 300
   type: CNAME
@@ -63,9 +66,6 @@ qnap:
   ttl: 86700
   type: A
   value: 115.70.36.137
-'*.tele':
-    type: CNAME
-    value: tele.sknk.ws. 
 tele:
   ttl: 86700
   type: A
