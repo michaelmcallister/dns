@@ -54,6 +54,10 @@ home:
   - ns-1772.awsdns-29.co.uk.
   - ns-504.awsdns-63.com.
   - ns-756.awsdns-30.net.
+k3s:
+  ttl: 86700
+  type: A
+  value: 115.70.36.137
 nas:
   ttl: 86700
   type: A
