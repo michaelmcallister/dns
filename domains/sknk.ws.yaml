@@ -42,6 +42,10 @@ google._domainkey:
   ttl: 300
   type: TXT
   value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSygHDLYXF0Yr7k0nWW8giEZz5KRdeQOKPuU6s+HePbZqktefC2PvJ485WhVBOjkYD/2bvKAt2BotKVT0pSkKqYs2/DWPC8DWqQKq2VWoJ+EAIyhmYWrT1QAxZf+gYzG/gX5iLEPyLTEswdJvIezOmeMV6uBy3naScks3ni9vZ3QIDAQAB
+grocy:
+  ttl: 300
+  type: A
+  value: 115.70.36.137
 hit:
   ttl: 86700
   type: A
