@@ -94,6 +94,10 @@ tele:
   ttl: 86700
   type: A
   value: 115.70.36.137
+teleport:
+  ttl: 86700
+  type: A
+  value: 115.70.36.137
 torrent:
   ttl: 86700
   type: A
