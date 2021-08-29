@@ -20,6 +20,9 @@
   - ttl: 300
     type: TXT
     value: v=spf1 include:_spf.google.com ~all
+  - ttl: 86400
+    type: TXT
+    value: protonmail-verification=c92170a51de57190d74948c7d59b90a5d2bab955
 google._domainkey:
   ttl: 300
   type: TXT
