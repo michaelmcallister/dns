@@ -1,108 +1,58 @@
 ---
 ? ''
-: - type: MX
+: - ttl: 300
+    type: A
+    value: 66.241.125.86
+  - ttl: 300
+    type: AAAA
+    value: 2a09:8280:1::37:f0b6
+  - type: MX
     values:
-    - exchange: aspmx.l.google.com.
-      preference: 1
-    - exchange: alt1.aspmx.l.google.com.
-      preference: 5
-    - exchange: alt2.aspmx.l.google.com.
-      preference: 5
-    - exchange: aspmx2.googlemail.com.
+    - exchange: mail.protonmail.ch.
       preference: 10
-    - exchange: aspmx3.googlemail.com.
-      preference: 10
+    - exchange: mailsec.protonmail.ch.
+      preference: 20
+  - ttl: 172800
+    type: NS
+    values:
+    - ns-1401.awsdns-47.org.
+    - ns-2027.awsdns-61.co.uk.
+    - ns-276.awsdns-34.com.
+    - ns-935.awsdns-52.net.
   - ttl: 300
     type: TXT
-    value: google-site-verification=paI3ZxBkMgfLYLpgsd9UZ32ttjBDat8T1u8qiq22Agg
-'*.tele':
-    type: CNAME
-    value: tele.sknk.ws. 
-api:
+    values:
+    - google-site-verification=paI3ZxBkMgfLYLpgsd9UZ32ttjBDat8T1u8qiq22Agg
+    - protonmail-verification=bcc4caa18ce6257ce84b14189450816fc1a3ff6f
+    - v=spf1 include:_spf.protonmail.ch mx ~all
+'*':
   ttl: 300
+  type: A
+  value: 66.241.125.86
+_acme-challenge:
+  ttl: 86400
   type: CNAME
-  value: hp6mxwik59.execute-api.ap-southeast-2.amazonaws.com.
-blog:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-code:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-dvd:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-edms:
+  value: sknk.ws.qqlj1y.flydns.net.
+_dmarc:
   ttl: 300
-  type: A
-  value: 115.70.36.137
+  type: TXT
+  value: v=DMARC1\; p=none
+blog:
+  type: CNAME
+  value: michaelmcallister.github.io.
 google._domainkey:
   ttl: 300
   type: TXT
   value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDSygHDLYXF0Yr7k0nWW8giEZz5KRdeQOKPuU6s+HePbZqktefC2PvJ485WhVBOjkYD/2bvKAt2BotKVT0pSkKqYs2/DWPC8DWqQKq2VWoJ+EAIyhmYWrT1QAxZf+gYzG/gX5iLEPyLTEswdJvIezOmeMV6uBy3naScks3ni9vZ3QIDAQAB
-grocy:
+protonmail2._domainkey:
   ttl: 300
-  type: A
-  value: 115.70.36.137
-hit:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-home:
+  type: CNAME
+  value: protonmail2.domainkey.dfwvpauwexj7cm465pwr5zyhxgzwhgyl6oub5itumjqoib4ms5rgq.domains.proton.ch.
+protonmail3._domainkey:
   ttl: 300
-  type: NS
-  values:
-  - ns-1067.awsdns-05.org.
-  - ns-1772.awsdns-29.co.uk.
-  - ns-504.awsdns-63.com.
-  - ns-756.awsdns-30.net.
-k3s:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-nas:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-nextcloud:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-pihole:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-plantcam:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-plex:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-qnap:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-registry:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-sw1:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-tele:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-teleport:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
-torrent:
-  ttl: 86700
-  type: A
-  value: 115.70.36.137
+  type: CNAME
+  value: protonmail3.domainkey.dfwvpauwexj7cm465pwr5zyhxgzwhgyl6oub5itumjqoib4ms5rgq.domains.proton.ch.
+protonmail._domainkey:
+  ttl: 300
+  type: CNAME
+  value: protonmail.domainkey.dfwvpauwexj7cm465pwr5zyhxgzwhgyl6oub5itumjqoib4ms5rgq.domains.proton.ch.

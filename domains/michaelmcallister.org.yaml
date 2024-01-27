@@ -2,27 +2,40 @@
 ? ''
 : - ttl: 86400
     type: A
-    value: 115.70.36.137
+    value: 66.241.125.86
+  - ttl: 300
+    type: AAAA
+    value: 2a09:8280:1::37:f0b6
   - type: MX
     values:
-    - exchange: aspmx.l.google.com.
-      preference: 1
-    - exchange: alt1.aspmx.l.google.com.
-      preference: 5
-    - exchange: alt2.aspmx.l.google.com.
-      preference: 5
-    - exchange: alt3.aspmx.l.google.com.
+    - exchange: mail.protonmail.ch.
       preference: 10
-    - exchange: alt4.aspmx.l.google.com.
-      preference: 10
-    - exchange: 2dmzao7gpxwyj7q6lb43764w35maavmgojt76yjryi5srye7eyoa.mx-verification.google.com.
-      preference: 15
+    - exchange: mailsec.protonmail.ch.
+      preference: 20
+  - ttl: 172800
+    type: NS
+    values:
+    - ns-1210.awsdns-23.org.
+    - ns-141.awsdns-17.com.
+    - ns-2045.awsdns-63.co.uk.
+    - ns-771.awsdns-32.net.
   - ttl: 300
     type: TXT
-    value: v=spf1 include:_spf.google.com ~all
-  - ttl: 86400
-    type: TXT
-    value: protonmail-verification=c92170a51de57190d74948c7d59b90a5d2bab955
+    values:
+    - protonmail-verification=c92170a51de57190d74948c7d59b90a5d2bab955
+    - v=spf1 include:_spf.protonmail.ch mx ~all
+'*':
+  ttl: 300
+  type: A
+  value: 66.241.125.86
+_acme-challenge:
+  ttl: 86400
+  type: CNAME
+  value: michaelmcallister.org.qqlj1y.flydns.net.
+_dmarc:
+  ttl: 300
+  type: TXT
+  value: v=DMARC1\; p=none
 google._domainkey:
   ttl: 300
   type: TXT
@@ -31,7 +44,19 @@ mail:
   ttl: 300
   type: CNAME
   value: ghs.googlehosted.com.
+protonmail2._domainkey:
+  ttl: 300
+  type: CNAME
+  value: protonmail2.domainkey.dpesfmmq6v3scrr6tbpikhhms4kffusbemh52j6yflnmhkl3d6wea.domains.proton.ch.
+protonmail3._domainkey:
+  ttl: 300
+  type: CNAME
+  value: protonmail3.domainkey.dpesfmmq6v3scrr6tbpikhhms4kffusbemh52j6yflnmhkl3d6wea.domains.proton.ch.
+protonmail._domainkey:
+  ttl: 300
+  type: CNAME
+  value: protonmail.domainkey.dpesfmmq6v3scrr6tbpikhhms4kffusbemh52j6yflnmhkl3d6wea.domains.proton.ch.
 www:
   ttl: 86400
   type: A
-  value: 115.70.36.137
+  value: 66.241.125.86

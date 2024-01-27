@@ -2,34 +2,22 @@
 ? ''
 : - ttl: 86400
     type: A
-    value: 115.70.36.137
-  - ttl: 300
-    type: MX
+    value: 66.241.125.86
+  - ttl: 172800
+    type: NS
     values:
-    - exchange: aspmx.l.google.com.
-      preference: 1
-    - exchange: alt1.aspmx.l.google.com.
-      preference: 5
-    - exchange: alt2.aspmx.l.google.com.
-      preference: 5
-    - exchange: aspmx2.googlemail.com.
-      preference: 10
-    - exchange: aspmx3.googlemail.com.
-      preference: 10
-  - type: TXT
-    value: google-site-verification=nRbQoaxLD5A4-m-MIpmm8wKoVVb17D9LVsEebwMn05Y
-blog:
-- ttl: 86400
+    - ns-1054.awsdns-03.org.
+    - ns-1955.awsdns-52.co.uk.
+    - ns-347.awsdns-43.com.
+    - ns-709.awsdns-24.net.
+'*':
+  ttl: 300
   type: A
-  value: 115.70.36.137
+  value: 66.241.125.86
+blog:
+- ttl: 300
+  type: A
+  value: 66.241.125.86
 - ttl: 300
   type: TXT
   value: keybase-site-verification=m22FgTj4E0DrlDcy82is4KfHHT6j0DzQrdFIV3OPBZA
-google._domainkey:
-  ttl: 300
-  type: TXT
-  value: v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCl+eO0iypQotQ0GH4TF4Gj0x1uWWY3TiYp6cnNffF6kHPJE3AUWH58I4y9P7pXlTyryj2/Mb708Tlf+2mSCaZfAzCifSG9WoSj2XiGul3UeoEu9aZR0NSeUseRKOSCivqOCaR4UV4FWsEnMiZVJ0KrYhiLkvG0j+x5lcyYvXecLQIDAQAB
-resume:
-  ttl: 86400
-  type: A
-  value: 115.70.36.137
