@@ -40,6 +40,9 @@ _dmarc:
 blog:
   type: CNAME
   value: michaelmcallister.github.io.
+code:
+  type: A
+  value: 66.241.125.86
 google._domainkey:
   ttl: 300
   type: TXT
