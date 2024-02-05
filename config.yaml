@@ -1,6 +1,5 @@
 ---
 manager:
-  include_meta: True
   max_workers: 2
 
 providers:
