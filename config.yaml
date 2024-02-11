@@ -34,3 +34,8 @@ zones:
       - config
     targets:
       - route53
+  skunkworks.consulting.:
+    sources:
+      - config
+    targets:
+      - route53
